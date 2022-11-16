@@ -22,7 +22,7 @@
 
 ![](https://i.imgur.com/PBvnYge.png)
 
-Скриншот Whatsapp:
+Скриншот WhatsApp:
 
 ![](https://i.imgur.com/Bz9MRkf.png)
 
