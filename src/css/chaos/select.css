@@ -1,0 +1,30 @@
+.chaos_select_container {
+  align-items: center;
+}
+
+.chaos_select_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 85%;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5em;
+  border: 1px solid #949393;
+  background-color: #ffbb00;
+  background: linear-gradient(180deg, #ffa600, #fcd07e, #ffa600);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  color: #ffffff;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  font-weight: bold;
+}
+
+.chaos_select_close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 40px;
+  cursor: pointer;
+  font-weight: normal;
+}

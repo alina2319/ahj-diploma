@@ -1,0 +1,24 @@
+.header {
+  position: absolute;
+  flex: 0 0 auto;
+  padding: 0.2rem 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__heading {
+  margin-left: 1rem;
+}
+
+.header__logo {
+  width: 70px;
+}
+
+.header__title {
+  font-size: 1.8rem;
+  color: white;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}

@@ -1,0 +1,150 @@
+.chaos_messages {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 130px 1rem 0.5rem 1rem;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.chaos_messages_message {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 45%;
+  max-width: 85%;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #ffbb00;
+  background: linear-gradient(180deg, #ffa600, #fcd07e, #ffa600);
+  border: 1px solid #747373;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.chaos_messages_message_animation {
+  animation: appearance 600ms ease-in-out;
+}
+
+@keyframes appearance {
+  from {
+    transform: scaleY(0) translateX(300px) skew(20deg);
+    opacity: 0;
+  }
+}
+
+.chaos_message_header {
+  height: 2rem;
+}
+
+.chaos_message_date {
+  background-color: #c9f76f;
+  background: linear-gradient(180deg, #5c8a01, #86b32d, #5c8a01);
+  color: #fd3c3c;
+  padding: 0.4rem 0.8rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.chaos_message_tools {
+  display: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 9px;
+  right: 15px;
+  background-color: #ffa600;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #ffa600;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+.chaos_message_tools_show {
+  display: block;
+}
+
+.chaos_message_tools_active {
+  background-color: white;
+}
+
+.chaos_message_tools_container {
+  display: flex;
+  height: 20px;
+  position: absolute;
+  right: 35px;
+  top: 9px;
+}
+
+.chaos_message_tools_delete,
+.chaos_message_tools_pin,
+.chaos_message_tools_favourite {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.chaos_message_tools_delete {
+  background: no-repeat center/contain url("../../img/svg/cancel.svg");
+}
+
+.chaos_message_tools_pin {
+  background: no-repeat center/contain url("../../img/svg/pin_white.svg");
+}
+
+.chaos_message_tools_favourite {
+  background: no-repeat center/contain url("../../img/svg/star_white.svg");
+}
+
+.chaos_message_favourite {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 9px;
+  right: 45px;
+  cursor: pointer;
+  background: no-repeat center/contain url("../../img/svg/star.svg");
+}
+
+.chaos_message_pin {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 9px;
+  right: 75px;
+  cursor: pointer;
+  background: no-repeat center/contain url("../../img/svg/pin_yellow.svg");
+}
+
+.chaos_message_body {
+  word-break: break-word;
+  padding: 0.8rem;
+}
+
+.chaos_message_geo {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.8rem;
+}
+
+.chaos_messages_image,
+.chaos_messages_video,
+.chaos_messages_audio {
+  display: block;
+  max-width: 100%;
+}
+
+.chaos_messages_file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chaos_messages_file_bg {
+  width: 120px;
+  height: 120px;
+  background: no-repeat center/contain url("../../img/svg/download-file.svg");
+}

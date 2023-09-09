@@ -1,0 +1,57 @@
+.chaos_organizer {
+  min-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+  font-size: 0.8rem;
+}
+
+.chaos_organizer a {
+  color: #084aff;
+}
+
+.chaos_container {
+  position: relative;
+  width: calc(100% - 1.5rem);
+  height: 100%;
+  display: flex;
+  border: 1px solid #003b3b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.chaos_main {
+  position: relative;
+  padding-bottom: 4rem;
+  background-color: whitesmoke;
+  background-image: url("../../img/chat-area_1000x1000.png");
+  border-top-left-radius: 10px;
+  flex: 3;
+  border-right: 1px solid #003b3b;
+}
+
+.chaos_connection_error {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.chaos_connection_error::after {
+  content: "Ошибка. Проверьте соединение с сервером.";
+  color: red;
+  font-weight: bold;
+}

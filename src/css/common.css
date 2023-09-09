@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("../font/Montserrat-Regular.woff") format("woff"), url("../font/Montserrat-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+  --color-red: #ff0000;
+  --color-white: #ffffff;
+  --color-whitesmoke: #f5f5f5;
+  --color-gray: #b1b1b1;
+  --color-gray-active: #858585;
+  --color-green: #008000;
+  --color-blue: #0278ff;
+  --color-blue-active: #0168df;
+  --color-yellow: #fde143;
+  --color-yellow-active: #ffd900;
+  --main-br: 10px;
+}
+
+html {
+  height: 100%;
+  background-image: url("../img/list_1500x500.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "MontserratRegular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 100%;
+  border: 1px solid var(--color-gray);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  font-size: 0.3rem;
+}
+
+.container {
+  height: 100%;
+  max-width: 1300px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0 0.8rem;
+  position: relative;
+}

@@ -1,0 +1,300 @@
+.chaos_form_container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.chaos_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 80px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-top: 1px solid #003b3b;
+}
+
+.chaos_form_input {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  padding: 0.8rem 4rem 0.8rem 0.8rem;
+  outline: none;
+  transition: box-shadow 0.3s ease-out, outline 0.3s ease-out;
+}
+
+.chaos_form_input:focus {
+  box-shadow: inset 0 0 5px 0 #003b3b;
+  outline: 1px solid #003b3b;
+  outline-offset: -2px;
+}
+
+.chaos_form_close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.chaos_file_label {
+  display: flex;
+  align-items: baseline;
+  width: 250px;
+  margin: 0 2rem;
+}
+
+.chaos_file_input {
+  width: 100%;
+  padding: 8px 5px;
+  margin-right: 15px;
+  font-size: 1.2em;
+  color: white;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #ffbb00;
+  background: linear-gradient(180deg, #ffa600, #fcd07e, #ffa600);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border: 1px solid #003b3b;
+  border-radius: 0.5em;
+  text-align: center;
+  transition: box-shadow 0.3s ease-out;
+}
+
+.chaos_file_input:hover {
+  box-shadow: 0 0 5px 0 grey;
+  transition: box-shadow 0.3s ease-out;
+}
+
+.chaos_file_hidden {
+  display: none;
+}
+
+.chaos_dropplace_container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.8;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.chaos_dropplace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0.5rem;
+  border: 2px dashed #006363;
+}
+
+.chaos_dropplace::after {
+  content: "Переместить файл сюда";
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.chaos_media_container {
+  display: flex;
+  width: 250px;
+  height: 42px;
+  margin: 0 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chaos_media_record {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: box-shadow 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.chaos_media_record:hover {
+  background-color: #e20303;
+  box-shadow: 0 0 5px 0 grey;
+  transition: box-shadow 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.chaos_media_status {
+  width: 200px;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.chaos_media_stop {
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: box-shadow 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.chaos_media_stop:hover {
+  background-color: #313131;
+  box-shadow: 0 0 5px 0 grey;
+  transition: box-shadow 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.chaos_geo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+  top: -45px;
+  font-size: 1rem;
+  color: #348100;
+  background-color: #fdba0062;
+  border: 1px solid #b8b8b8;
+  border-radius: 30px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  padding: 0.2rem 0.5rem;
+}
+
+.chaos_geo_icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 5px;
+  background: no-repeat center/contain url("../../img/svg/geo.svg");
+}
+
+.chaos_geo_icon a {
+  color: green;
+}
+
+.chaos_geo_close {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.chaos_form_invalid {
+  border: 5px solid #ff0606;
+  animation: invalid 150ms ease-in-out;
+}
+
+@keyframes invalid {
+  0% {
+    transform: translateX(3px);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(2px);
+  }
+}
+
+.chaos_form_clip {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  background-color: #ffa600;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px 3px #ffa600, 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: background-color 0.3s ease-out;
+}
+
+.chaos_form_clip_active {
+  background: none;
+}
+
+.chaos_add_container {
+  display: none;
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0000008c;
+  background-color: #ffffff;
+  border-left: 1px solid grey;
+  border-top: 1px solid grey;
+  right: -22px;
+  bottom: 58px;
+  box-shadow: 0 0 5px 0 grey;
+}
+
+.chaos_add_container_visible {
+  display: block;
+}
+
+.chaos_add_list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.chaos_add_item {
+  position: relative;
+  padding: 1rem 2.5rem 1rem 3.5rem;
+  width: 100%;
+  transition: background-color 0.2s ease-out, color 0.1s ease-out;
+}
+
+.chaos_add_item:hover {
+  background-color: #ffa600;
+  color: white;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.chaos_add_files::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  border-radius: 50%;
+  background: no-repeat center/contain url("../../img/svg/scraper.svg");
+}
+
+.chaos_add_video::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  background: no-repeat center/contain url("../../img/svg/video2.svg");
+}
+
+.chaos_add_audio::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  background: no-repeat center/contain url("../../img/svg/mic_red.svg");
+}
+
+.chaos_add_geo::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  background: no-repeat center/contain url("../../img/svg/geo.svg");
+}
